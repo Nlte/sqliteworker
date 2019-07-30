@@ -1,7 +1,7 @@
 # Multithreaded sqlite worker
 
-Thread safe class to interact with sqlite database in python.
-The class encapsulates the sqlite connection / cursor. Externals threads submit queries to the sqlite worker. Those queries are pushed to an event queue which runs them on the sqlite database and returns a future.
+Thread safe class to interact with sqlite databases in python.
+The class encapsulates a sqlite connection / cursor. Externals threads submit queries to the sqlite worker. Those queries are pushed to an event queue which runs them on the sqlite database and returns a future.
 
 ## Usage
 ```
