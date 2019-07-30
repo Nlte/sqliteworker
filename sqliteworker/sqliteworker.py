@@ -82,5 +82,5 @@ class SqliteWorker(EventQueue):
             LOG.error('sqlite3 error: close %s', e)
 
     def stop(self, priority_flag=True):
-        super().stop(priority_flag=False)
+        super().stop(priority_flag=priority_flag)
         self.running = False

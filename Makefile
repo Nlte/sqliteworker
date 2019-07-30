@@ -1,6 +1,3 @@
-RUNTEST=python -m unittest -v -b
-TESTS=$(wildcard tests/*.py)
-
 install:
 	pip install .
 
@@ -12,8 +9,7 @@ clean-build:
 clean:
 	flake8
 
-test: $(TESTS)
-	@echo $^
-	${RUNTEST} $^
+test: 
+	pytest -v
 
 .PHONY: init test
